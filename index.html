@@ -3,7 +3,11 @@
 <script>
     function onPlayerReady(event) {
         console.log(event);
-        event.target.playVideo();
+        setTimeout(() => {
+            console.log('play');
+            event.target.playVideo();
+        }, 100)
+
     }
 
     // Load the IFrame Player API code asynchronously.
